@@ -7,7 +7,7 @@ import cors from 'cors';
 import { DB_URL, connect } from "./server/config/db.js";
 
 //IMPORTACION DE RUTAS
-import { carRoutes } from './server/api/routes/cars.routes.js';
+import { facturasRoutes } from "./server/api/routes/cars.routes.js";
 import { userRoutes } from "./server/api/routes/users.routes.js";
 
 
@@ -29,7 +29,7 @@ server.use(cors('*'));
 
 
 //RUTAS
-server.use("/cars", carRoutes);
+server.use("/facturas", facturasRoutes);
 server.use("/users", userRoutes);
 
 
